@@ -7,5 +7,5 @@ Not perfect and some may consider it slow, but does the job.
 
 Run as follows:
 ```
-$ -p <chrome_profile_directory> -e "<authenticated_account>@gmail.com" -f <file_with_emails>
+$ GmailUserEnum.py -p <chrome_profile_directory> -e "<authenticated_account>@gmail.com" -f <file_with_emails>
 ```
