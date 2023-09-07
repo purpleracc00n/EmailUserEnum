@@ -8,11 +8,11 @@ Make sure undetected-chromedriver and google chrome are in compatible (latest) v
 $ pip3 install --upgrade undetected-chromedriver
 ```
 
-Not perfect and some may consider it slow, but does the job.
-
 Run as follows:
 ```
 $ GmailUserEnum.py -p <chrome_profile_directory> -e "<authenticated_account>@gmail.com" -f <file_with_emails>
 ```
 
-<chrome_profile_directory> on Kali Linux is /home/kali/.config/google-chrome/Default
+<chrome_profile_directory> on Kali Linux generally is /home/kali/.config/google-chrome/Default
+
+Not perfect and some may consider it slow, but does the job.
