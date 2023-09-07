@@ -3,7 +3,10 @@ Python3 + Selenium script that allows enumeration of valid Gmail emails via an a
 
 Supporting Google Chrome only.
 
-Make sure undetected-chromedriver and google chrome are in compatible (latest) versions...
+Make sure undetected-chromedriver and google chrome are in compatible (latest) versions... Sometimes after not using the tool for a while you may find that the Chrome version is ahead of undetected-chromedriver, just do:
+```
+$ pip3 install --upgrade undetected-chromedriver
+```
 
 Not perfect and some may consider it slow, but does the job.
 
