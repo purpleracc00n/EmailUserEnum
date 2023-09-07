@@ -9,3 +9,5 @@ Run as follows:
 ```
 $ GmailUserEnum.py -p <chrome_profile_directory> -e "<authenticated_account>@gmail.com" -f <file_with_emails>
 ```
+
+<chrome_profile_directory> on Kali Linux is /home/kali/.config/google-chrome/Default
