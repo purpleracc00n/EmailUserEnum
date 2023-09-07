@@ -44,13 +44,18 @@ class GmailEnumerator():
 			return False
 			
 	def lookup_gmail(self, email):
-			self.driver.get(f'https://calendar.google.com/calendar/u/0/embed?src={email}&pli=1')
-			check_value = str(self.driver.find_element(By.ID,"calendarTitle").get_attribute('innerText'))
+			try:
+				self.driver.get(f'https://calendar.google.com/calendar/u/0/embed?src={email}&pli=1')
 			
-			if email in check_value and "Google Calendar" not in check_value:
-				return True
-			else:
-				return False
+				check_value = str(self.driver.find_element(By.ID,"calendarTitle").get_attribute('innerText'))
+			
+				if email in check_value and "Google Calendar" not in check_value:
+					return True
+				else:
+					return False
+			except NoSuchElementException:
+				print(f"{Fore.RED}[-] Could not find calendarTitle, make sure you are using email addresses only... {Style.RESET_ALL}")
+				
 
 ge = GmailEnumerator(args.profile, args.email)
 if not ge.do_login():
